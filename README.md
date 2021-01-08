@@ -73,8 +73,9 @@ Warning: refer to the security section above.
 Point the browser to the default URL, typically: http://127.0.0.1:5000/
 Use one of the username/password combinations you entered in ```apsire_web_app\users.py```
 
-## Aspire as a command line tool
+## Aspire as a command line tool for advanced users
 ### Features
+* Can be used by developers for automating alignment jobs
 * Align multiple plain text files
 * Names of source, target, and MT files can be read from an Excel sheet
 * Export TMX or XLS translation memories
