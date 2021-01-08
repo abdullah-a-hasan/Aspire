@@ -77,7 +77,6 @@ Use one of the username/password combinations you entered in ```apsire_web_app\u
 ### Features
 * Align multiple plain text files
 * Names of source, target, and MT files can be read from an Excel sheet
-* Segmentation is automatic and can be customized using an SRX file
 * Export TMX or XLS translation memories
 * Can be built and utilized by other applications.
 
