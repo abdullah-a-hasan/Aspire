@@ -8,13 +8,12 @@ Aspire can be used as a web app or a command-line program. Each implementation h
 
 ## Aspire as a web app
 ### Security warning
-Make sure to add and change usernames and passwords as needed by modifying ```apsire_web_app\users.py```
-The web app runs on lacalhost by default. If you need to make the app publically accessible, it's your responsibility to set up a secure connection (HTTPS) between the user and the local app. The web app itself does not provide any encryption or security features.
+Make sure to add and change usernames and passwords as needed by modifying ```apsire_web_app\users.py```. Password will be visible in the code. The web app runs on lacalhost by default. If you need to make the app publically accessible, it's your responsibility to set up a secure connection (HTTPS) between the user and the local app. The web app itself does not provide any encryption or security features.
 
 ### Features
 * Align plain text or provide source and target URLs to align web pages
 * Easily choose alignment algorithm and fine-tune parameters 
-* Segmentation is automatic and can be customized using an SRX file
+* Segmentation is automatic and can be customized by modifying the default SRX file: ```apsire_web_app/web_dynamic/py_srx_segmenter/default_rules.srx```
 * Export TMX or XLS translation memories
 * Review alignments to approve or reject pairs
 * View alignment scores
