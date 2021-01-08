@@ -1,0 +1,4 @@
+source asp-env/bin/activate
+cd apsire_web_app
+export FLASK_APP=flask_app.py
+python3 -m flask run

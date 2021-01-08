@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aspire MT-Based Aligner</title>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+		<script src="js/global_vars.js"></script>
+        <script src="js/align.js"></script>
+    </head>
+    <body>
+
+        <table id="source_and_target" style="width: 100%;">
+        <tbody>
+        <tr>
+        <td style="width: 45%">Source</td>
+        <td style="width: 45%">Target</td>
+        </tr>
+        <tr>
+        <td><textarea id="source_ta" style="width: 90%; margin: 3px;" rows="25" placeholder="Paste URL or text here..."></textarea></td>
+        <td><textarea id="target_ta" style="width: 90%; margin: 3px;" rows="25" placeholder="Paste URL or text here..."></textarea></td>
+        </tr>
+        </tbody>
+        </table>
+        <a href="#" id="toggle_advanced" style="font-size: 16px;">advanced settings</a>
+        <br/>
+        <div id="advanced_settings" style="display:none;">
+            <table id="options" style="width: 100%; border-width:1px; border-style:solid;">
+            <tbody>
+            <tr>
+                <td>Advanced settings:</td>
+            </tr>
+            <tr>
+                <td>
+                    Algorithm: <select id="algorithm">
+                        <option value="tf-idf">tf-idf - scikit-learn</option>
+                        <option value="fuzzy">fuzzy</option>
+                </td>
+            </tr>
+            <tr>
+                <td>Weights:- Semantic:<input value="0.6" id="input_semantic_weight" type="text"/> Location:<input id="input_location_weight" value="0.2" type="text"/> Length:<input value="0.1" id="input_length_weight" type="text"/> Special tokens:<input value="0.2" id="input_meta_weight" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Settings:- Minimum semantic score:<input id="input_minimum_semantic_score" value="0.40" type="text"/> Minimum length score:<input id="input_minimum_length_score" value="0.60" type="text"/> Search range: <input id="input_search_range" value="5" type="text"/> </td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <div style="text-align: center;">
+        <button type="button" id="align_btn" style="background-color:green; color: white;">Align</button>
+        <p id="warning" style="display:none; color: red;">...</p>
+        <br/>
+		<br/>
+		<br/>
+		<div id="summary">
+		</div>		
+        </div>
+
+    </body>
+
+
+</html>

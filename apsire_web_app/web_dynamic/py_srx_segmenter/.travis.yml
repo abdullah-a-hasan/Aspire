@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+
+sudo: false
+
+install:
+  - pip install -e '.[test]'
+
+before_script:
+  - flake8 --max-line-length=99 .
+
+script:
+  - nosetests --rednose --with-coverage --cover-package srx_segmenter

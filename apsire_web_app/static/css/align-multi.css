@@ -1,0 +1,10 @@
+.display_alignments{
+	width: 100%;
+}
+.display_alignments td{
+	border-width: 1px;
+	border-style:solid;
+}
+.source_col, .target_col{
+	background-color: #fff8884d;
+}

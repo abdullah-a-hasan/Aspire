@@ -1,0 +1,6 @@
+Flask==1.1.2
+Flask-HTTPAuth==4.2.0
+google-cloud==0.34.0
+google-cloud-translate==3.0.2
+newspaper3k==0.2.8
+regex==2020.11.13

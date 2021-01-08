@@ -1,0 +1,14 @@
+{
+    'location_weight': 0.2,
+    'length_weight': 0.1,
+    'semantic_weight': 0.6,
+    'meta_weight': 0.1,
+    'minimum_semantic_score': 0.3,
+    'minimum_length_score': 0.6,
+    'minimum_anchor_semantic_score': 0.5,
+    'minimum_anchor_length_score': 0.6,
+    'search_range': 20,
+    'initial_leniency_multiplier': 0.1,
+    'high_context_leniency_multiplier': 0.5,
+    'minimum_partial_sem_match': 0.2
+}

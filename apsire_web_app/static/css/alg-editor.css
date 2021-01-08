@@ -1,0 +1,51 @@
+.display_alignments{
+	width: 100%;
+}
+.display_alignments td{
+	border-width: 1px;
+	border-style: dotted;
+	border-color: black;
+	cursor: pointer;
+}
+.source_col, .target_col{
+	background-color: #fff8884d;
+}
+.low-sem td:first-child{
+	background-color: #b2899f !important;
+	#font-style: italic !important;
+	#color: #b2899f !important;
+	#background-image: url("images/low-score.jpg");
+	
+}
+.anchor td:first-child{
+	background-color: lightgreen !important;
+	#color: darkgreen !important;
+	#font-weight: bold;
+}
+.non-trans td:first-child{
+	background-color: grey !important;
+	#color: grey !important;
+	#font-style: italic !important;
+	#color: white !important;
+}
+.deleted{
+	text-decoration: line-through !important;
+	color: red !important;			
+}
+.approved_alt td:first-child{
+	background-color: darkgreen !important;
+	color: white;
+}
+body{
+	font-family: Tahoma;
+	font-size: 14px;
+}
+.rtl{
+	direction: rtl;
+}
+#alignments_table td,tr{
+	font-size: 12px;
+}
+#sub_tables td,tr{
+	font-size: 10px;
+}

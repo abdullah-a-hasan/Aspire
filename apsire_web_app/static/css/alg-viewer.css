@@ -1,0 +1,39 @@
+.display_alignments{
+	width: 100%;
+}
+.display_alignments td{
+	border-width: 1px;
+	border-style: dotted;
+	border-color: black;
+	
+}
+.source_col, .target_col{
+	background-color: #fff8884d;
+}
+.fail td{
+	background-color: #b2899f !important;
+	#font-style: italic !important;
+	#color: #b2899f !important;
+	#text-decoration: line-through !important;
+
+}
+.merged td:first-child{
+	background-color: lightgreen !important;
+	#color: darkgreen !important;
+	#font-weight: bold;
+}
+
+
+body{
+	font-family: Tahoma;
+	font-size: 14px;
+}
+.rtl{
+	direction: rtl;
+}
+#alignments_table td,tr{
+	font-size: 12px;
+}
+#sub_tables td,tr{
+	font-size: 10px;
+}
